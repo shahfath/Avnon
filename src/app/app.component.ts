@@ -22,6 +22,7 @@ export class AppComponent implements OnInit {
 
   closeModal() {
     this.q.push(this.ques);
+    this.o.push(this.opt);
     console.log(this.selectedQues);
     this.modalService.close();
   }
